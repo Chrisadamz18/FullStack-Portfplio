@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Portfolio || Elikem</title>
 </head>
@@ -18,13 +19,16 @@
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="">Contact</a></li>
+                    <i class="fa-solid fa-xmark icon fa-2x" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars icon fa-2x" onclick="openMenu()"></i>
             </nav>
             <div class="header__text">
                 <p> FullStack Web Developer</p>
                 <h1>Hi I'm<span> Eli Baron</span> &hearts;</h1>
             </div>
         </div>
+        </section>
         <!-- About Section -->
         <section id="about">
             <div class="about">
@@ -129,7 +133,147 @@
                 </div>
             </div>
         </section>
-    </section>
+        <!-- ===============Services======= -->
+        <section>
+            <div id="services">
+                <div class="container">
+                    <h1 class="subtitle">My Services</h1>
+                    <div class="services__list">
+                        <!-- 1st Service -->
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2 class="service__title">
+                                 FullStack Web Development
+                            </h2>
+                            <p class="service__description">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt labore iste aliquam repellendus sed nesciunt odio animi consectetur culpa laborum.
+                            </p>
+                            <a href="#" class="service__btn"> Learn More</a>
+                        </div>
+                        <!-- 2nd services -->
+                        <div>
+                            <i class="fa-solid fa-crop-simple"></i>
+                            <h2 class="service__title">
+                              UI/UX Design
+                            </h2>
+                            <p class="service__description">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt labore iste aliquam repellendus sed nesciunt odio animi consectetur culpa laborum.
+                            </p>
+                            <a href="#" class="service__btn"> Learn More</a>
+                        </div>
+                        <!-- 3rd service -->
+                        <div>
+                            <i class="fa-brands fa-app-store"></i>
+                            <h2 class="service__title">
+                            Mobile App Development
+                            </h2>
+                            <p class="service__description">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt labore iste aliquam repellendus sed nesciunt odio animi consectetur culpa laborum.
+                            </p>
+                            <a href="#" class="service__btn"> Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ----------------Portfolio---------------- -->
+        <section id="portfolio">
+            <div class="portfolio">
+                <div class="container">
+                    <h1 class="subtitle">My Works</h1>
+                    <div class="work__list">
+                        <!-- 1st work -->
+                        <div class="work">
+                            <img src="./images/imgg3.png" alt="">
+                            <div class="layer">
+                                <h3>Real Estate App</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, architecto.</p>
+                                <a href="#">
+                                   <i class="fa-solid fa-download"></i> 
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- 2nd work -->
+                         <div class="work">
+                            <img src="./images/imgg3.png" alt="">
+                             <div class="layer">
+                                <h3>Real Estate App</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, architecto.</p>
+                                <a href="#">
+                                   <i class="fa-solid fa-download"></i> 
+                                </a>
+                            </div>
+
+                        </div>
+                        <!-- 3rd work -->
+                         <div class="work">
+                            <img src="./images/imgg3.png" alt="">
+                             <div class="layer">
+                                <h3>Real Estate App</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, architecto.</p>
+                                <a href="#">
+                                   <i class="fa-solid fa-download"></i> 
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==============Contact=============== -->
+        <section id="contact">
+            <div class="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="contact__left">
+                            <h1 class="subtitle">Contact Me</h1>
+                            <p><i class="fa-solid fa-paper-plane"></i>criselikem@gmail.com</p>
+                            <p><i class="fa-solid fa-square-phone"></i>  +23324 9157 534</p>
+                            <div class="social__icons">
+                                <!-- 1st icon -->
+                                <a href="#" class="social__link">
+                                    <i class="fa-brands fa-facebook-square"></i>
+                                </a>
+                                <!-- 2nd icon -->
+                                <a href="#" class="social__link">
+                                     <i class="fa-brands fa-twitter-square"></i>
+                                </a>
+                                <!-- 3rd icon -->
+                                <a href="#" class="social__link">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                                <!-- 4th    -->
+                                <a href="#" class="social__link">
+                                    <i class="fa-brands fa-instagram-square"></i>
+                                </a>
+                        
+                            </div>
+                            <a href="#" class="btn btn__primary"> Download CV</a>
+                        </div>
+                        <div class="contact__right">
+                            <form >
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                 <input type="email" name="Email" placeholder="Your Email" required>
+                                 <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+
+                                 <button type="submit" class="btn btn__primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
     <script src="./js/main.js"></script>
 </body>
+<footer class="copyright">
+    <p>
+        Copyright @ 2022 <a href="#">Eli Baron</a>. All Rights Reserved.
+    </p>
+</footer>
 </html>
