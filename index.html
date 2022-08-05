@@ -9,16 +9,21 @@
     <title>Portfolio || Elikem</title>
 </head>
 <body>
+    <!-- Top navigation -->
+    <div class="scrollToTop-btn">
+    <i class="fas fa-angle-up"></i>
+  </div>
+
     <section id="header">
         <div class="container">
             <nav>
                 <h1 class="logo"><span>El</span>ikem</h1>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <i class="fa-solid fa-xmark icon fa-2x" onclick="closeMenu()"></i>
                 </ul>
                 <i class="fa-solid fa-bars icon fa-2x" onclick="openMenu()"></i>
@@ -254,13 +259,14 @@
                             <a href="#" class="btn btn__primary"> Download CV</a>
                         </div>
                         <div class="contact__right">
-                            <form >
+                            <form name="submit-to-google-sheet" >
                                 <input type="text" name="Name" placeholder="Your Name" required>
                                  <input type="email" name="Email" placeholder="Your Email" required>
                                  <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
 
                                  <button type="submit" class="btn btn__primary">Submit</button>
                             </form>
+                            <span id="msg"></span>
                         </div>
                     </div>
                 </div>
@@ -270,6 +276,7 @@
 
 
     <script src="./js/main.js"></script>
+
 </body>
 <footer class="copyright">
     <p>
